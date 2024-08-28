@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Delivery</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <div class="logo">Food</div>
+        <nav>
+            <ul>
+                <li style="text-align: center">Home</li>
+                <li>Cart</li>
+                <li><input type="text" placeholder="Search"></li>
+                <li><a href="#"><img src="Media/cart.jpg" alt="Cart"></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-container">
+            <button class="delivery-type">Bike Delivery  <i class="fa-solid fa-motorcycle" style="color: #db1f0a; border-radius: 50%; border: solid white 6px; background-color: white"></i></button>
+            <h1>THE FASTEST <span>DELIVERY</span> IN <span>YOUR CITY</span> </h1>
+            <p>Experience the fastest delivery in your city with our top-notch service! We ensure your orders reach you in record time, so you can enjoy what you need without the wait. Whether it's food, groceries, or essentials, we're committed to delivering at lightning speed, straight to your door.</p>
+            <div class="buttons">
+                <button class="order-now">Order Now</button>
+                <button class="order-process"><i class="fa-solid fa-play fa-lg" style="color: #f8760d; border: 15px solid white; border-radius: 80%;"></i> Order Process</button>
+            </div>
+        </div>
+    
+        <div class="products">
+            <div class="product">
+                <img src="Media/burger_sandwich.png" alt="Burger">
+                <h3>Burger</h3>
+                <p>Mushroom Sauce</p>
+                <span>$5.15</span>
+            </div>
+            <div class="product">
+                <img src="Media/junk.jpg" alt="Food Combo">
+                <h3>Food Combo</h3>
+                <p>Mushroom Sauce</p>
+                <span>$9.15</span>
+            </div>
+            <div class="product">
+                <img src="Media/pizza.png" alt="Pizza">
+                <h3>Pizza</h3>
+                <p>Mushroom Sauce</p>
+                <span>$6.15</span>
+            </div>
+            <div class="product">
+                <img src="Media/purepng.png" alt="Cake">
+                <h3>Cake</h3>
+                <p>Mushroom Sauce</p>
+                <span>$5.15</span>
+            </div>
+        </div>
+    </section>
+    <section class="info-section">
+    <div class="info-box">
+        <div class="info-item">
+            <i class="fas fa-clock"></i>
+            <h4>Today 10:00am - 10:00pm</h4>
+            <p>Working time</p>
+        </div>
+        <div class="separator"></div>
+        <div class="info-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <h4>Mohammadpur, Dhaka</h4>
+            <p>Our Location</p>
+        </div>
+        <div class="separator"></div>
+        <div class="info-item">
+            <i class="fas fa-phone-alt"></i>
+            <h4>+88 017 0000 0000</h4>
+            <p>Phone Number</p>
+        </div>
+    </div>
+    </section>
+    <br><br><br>
+    
+    <section class="popular-items">
+        <h2>Most Popular Items</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="Media/Gyro.jpg" alt="Gyro Sandwich">
+                <h3>Gyro Sandwich</h3>
+                <span class="rating"><i class="fa-solid fa-star" style="color: #f57c0a;"></i>4.9</span>
+                <p>$15.00</p>
+                <button class="add-to-cart">Add To Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="Media/enchilada.jpg" alt="Enchilada">
+                <h3>Enchilada</h3>
+                <span class="rating"><i class="fa-solid fa-star" style="color: #f57c0a;"></i>5.0</span>
+                <p>$25.50</p>
+                <button class="add-to-cart">Add To Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="Media/greens.jpg" alt="Green Beans">
+                <h3>Green Beans</h3>
+                <span class="rating"><i class="fa-solid fa-star" style="color: #f57c0a;"></i>4.9</span>
+                <p>$12.00</p>
+                <button class="add-to-cart">Add To Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="Media/cake.jpg" alt="Cake">
+                <h3>Chocolate cake</h3>
+                <span class="rating"><i class="fa-solid fa-star" style="color: #f57c0a;"></i>5.0</span>
+                <p>$18.50</p>
+                <button class="add-to-cart">Add To Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="Media/pie.jpg" alt="Chicken Pot Pie">
+                <h3>Chicken Pot Pie</h3>
+                <span class="rating"><i class="fa-solid fa-star" style="color: #f57c0a;"></i>4.9</span>
+                <p>$25.00</p>
+                <button class="add-to-cart">Add To Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="Media/burger.jpg" alt="Cheese Burger">
+                <h3>Cheese Burger</h3>
+                <span class="rating"><i class="fa-solid fa-star" style="color: #f57c0a;"></i>4.9</span>
+                <p>$8.99</p>
+                <button class="add-to-cart">Add To Cart</button>
+            </div>
+            
+            <!-- Additional Products -->
+            <div class="product-card hidden-product">
+                <img src="Media/sushi.jpg" alt="Sushi Platter">
+                <h3>Sushi Platter</h3>
+                <span class="rating"><i class="fa-solid fa-star" style="color: #f57c0a;"></i>5.0</span>
+                <p>$22.00</p>
+                <button class="add-to-cart">Add To Cart</button>
+            </div>
+            <div class="product-card hidden-product">
+                <img src="Media/steak.jpg" alt="Grilled Steak">
+                <h3>Grilled Steak</h3>
+                <span class="rating"><i class="fa-solid fa-star" style="color: #f57c0a;"></i>4.9</span>
+                <p>$22.99</p>
+                <button class="add-to-cart">Add To Cart</button>
+            </div>
+            <div class="product-card hidden-product">
+                <img src="Media/falafel.jpg" alt="Falafel">
+                <h3>Falafel</h3>
+                <span class="rating"><i class="fa-solid fa-star" style="color: #f57c0a;"></i>4.6</span>
+                <p>$10.00</p>
+                <button class="add-to-cart">Add To Cart</button>
+            </div>
+            <div class="product-card hidden-product">
+                <img src="Media/gsalad.jpg" alt="Green Salad">
+                <h3>Green Salad</h3>
+                <span class="rating"><i class="fa-solid fa-star" style="color: #f57c0a;"></i>4.1</span>
+                <p>$24.99</p>
+                <button class="add-to-cart">Add To Cart</button>
+            </div>
+            <div class="product-card hidden-product">
+                <img src="Media/tacos.jpg" alt="Tacos">
+                <h3>Tacos</h3>
+                <span class="rating"><i class="fa-solid fa-star" style="color: #f57c0a;"></i>4.8</span>
+                <p>$9.99</p>
+                <button class="add-to-cart">Add To Cart</button>
+            </div>
+            <div class="product-card hidden-product">
+                <img src="Media/pasta.jpg" alt="Pasta">
+                <h3>Pasta</h3>
+                <span class="rating"><i class="fa-solid fa-star" style="color: #f57c0a;"></i>3.6</span>
+                <p>$11.99</p>
+                <button class="add-to-cart">Add To Cart</button>
+            </div>
+        </div>
+        <button id="see-more" class="see-more-btn">See More Products</button>
+    </section>
+
+<section class="why-choose-us">
+    <h2>Why Choose Our Favorite Food</h2>
+    <div class="features">
+        <div class="feature" id="qualityful-food">
+            <i class="fas fa-utensils"></i>
+            <h3>Qualityful Food</h3>
+            <p class="description">Our food is prepared with the freshest ingredients, ensuring each meal is bursting with flavor and nutrition.</p>
+            <p class="details hiddenn">We source our ingredients locally, supporting farmers and ensuring the highest quality in every bite.</p>
+        </div>
+        <div class="feature" id="healthy-food">
+            <i class="fas fa-apple-alt"></i>
+            <h3>Healthy Food</h3>
+            <p class="description">We prioritize health by offering a variety of meals that are balanced, nutritious, and delicious.</p>
+            <p class="details hiddenn">Our chefs carefully craft each dish to include the perfect balance of proteins, carbs, and fats.</p>
+        </div>
+        <div class="feature" id="fast-delivery">
+            <i class="fas fa-shipping-fast"></i>
+            <h3>Fast Delivery</h3>
+            <p class="description">Our speedy delivery ensures that your food arrives hot and fresh, right to your door, in record time.</p>
+            <p class="details hiddenn">Our delivery network is optimized to get your food to you as quickly as possible, without compromising quality.</p>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <h2>Our Happy Clients Say</h2>
+        <div class="testimonial-container">
+            <button class="testimonial-nav prev"><i class="fas fa-chevron-left"></i></button>
+            
+            <div class="testimonial-wrapper">
+                <div class="testimonial active">
+                    <p>"The food is always fresh and delivered on time. I can't imagine ordering from anywhere else!"</p>
+                    <div class="client-info">
+                        <img src="Media/c2.jpg" alt="Client Photo">
+                        <h3>Jessica Lee</h3>
+                        <span>Marketing Manager</span>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <p>"The variety of healthy options makes it easy to stay on track with my diet without sacrificing taste."</p>
+                    <div class="client-info">
+                        <img src="Media/c3.jpg" alt="Client Photo">
+                        <h3>Michael Smith</h3>
+                        <span>Personal Trainer</span>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <p>"I love how fast the delivery is. The food is always hot and delicious when it arrives!"</p>
+                    <div class="client-info">
+                        <img src="Media/c1.jpg" alt="Client Photo">
+                        <h3>Sarah Johnson</h3>
+                        <span>Freelance Designer</span>
+                    </div>
+                </div>
+            </div>
+
+            <button class="testimonial-nav next"><i class="fas fa-chevron-right"></i></button>
+        </div>
+        <div class="testimonial-image">
+            <img src="Media/burger-and-fries.png" alt="Burger and Fries">
+        </div>
+    </section>
+    
+    </section>
+<div class="newsletter-section">
+    <div class="newsletter-content">
+        <img src="Media/burger_sandwich.png" alt="Burger Image">
+        <div class="newsletter-text">
+            <h2>Subscribe To Our Newsletter</h2>
+            <p>Be sure to subscribe to our page and get great offers. We offer the best of the best service!</p>
+            <form id="newsletter-form">
+                <input type="email" placeholder="Type your email..." required>
+                <button type="submit">SUBSCRIBE</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <div class="footer-content">
+        <div class="footer-section about">
+            <h3>FOOD</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Commodo libero viverra dapibus odio sit malesuada in quis.</p>
+            <div class="socials">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        <div class="footer-section links">
+            <h4>Opening Restaurant</h4>
+            <ul>
+                <li>Sat-Wet: 09:00am-10:00PM</li>
+                <li>Thursday: 09:00am-11:00PM</li>
+                <li>Friday: 09:00am-8:00PM</li>
+            </ul>
+        </div>
+        <div class="footer-section links">
+            <h4>User Link</h4>
+            <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Order Delivery</a></li>
+                <li><a href="#">Payment & Tax</a></li>
+                <li><a href="#">Terms of Services</a></li>
+            </ul>
+        </div>
+        <div class="footer-section contact">
+            <h4>Contact Us</h4>
+            <ul>
+                <li>Mohammadpur, Dhaka</li>
+                <li>+88 017 0000 0000</li>
+                <li>+88 018 0000 0000</li>
+            </ul>
+            <form id="contact-form">
+                <input type="email" placeholder="Enter your email..." required>
+                <button type="submit"><i class="fas fa-arrow-right"></i></button>
+            </form>
+        </div>
+    </div>
+</footer>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -21,7 +21,6 @@ header .logo {
     font-weight: bold;
     color: #ff8000;
 }
-
 span{
     color: #ff8000;
 }
@@ -303,6 +302,8 @@ header nav img{
     opacity: 1;
 }
 
+
+
 h2 {
     text-align: center;
     margin-top: 50px;
@@ -370,29 +371,42 @@ h2 {
 
 .testimonials {
     text-align: center;
-    padding: 20px;
+    padding: 50px 20px;
+    background-color: #fff;
+    margin: 80px;
+}
+
+.testimonial-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.testimonial-wrapper {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
 }
 
 .testimonial {
-    background-color: white;
+    background-color: #f9f9f9;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 300px;
-    margin: 0 auto;
+    min-width: 100%;
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
-.testimonial img {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    margin-bottom: 10px;
-}
-
-.testimonial h3 {
-    font-size: 1.2em;
-    color: #333;
-    margin-bottom: 5px;
+.testimonial.active {
+    display: block;
 }
 
 .testimonial p {
@@ -400,12 +414,6 @@ h2 {
     color: #666;
 }
 
-footer {
-    text-align: center;
-    background-color: #FFA500;
-    color: #fff;
-    padding: 10px;
-}
 .client-info {
     display: flex;
     align-items: center;
@@ -595,6 +603,183 @@ footer {
 
 #contact-form button:hover {
     background-color: #e07b39;
+}
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .hero-container {
+        width: 100%;
+        padding-right: 0;
+        text-align: center;
+    }
+
+    .hero {
+        flex-direction: column;
+    }
+
+    .products {
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .products .product {
+        max-width: 150px;
+    }
+
+    .info-section .info-box {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .newsletter-section img {
+        width: 80px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    footer .footer-section.about {
+        max-width: 100%;
+    }
+
+    footer .footer-section.contact-form form {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-container h1 {
+        font-size: 48px;
+    }
+
+    .newsletter-section h2 {
+        font-size: 20px;
+    }
+
+    footer .footer-section.contact-form form input[type="email"] {
+        width: 100%;
+    }
+}
+/* Responsive Styles */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-content h2 {
+        font-size: 36px;
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .popular-items h2 {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-content h2 {
+        font-size: 24px;
+    }
+
+    .hero-content p {
+        font-size: 16px;
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+
+    .item {
+        padding: 15px;
+    }
+
+    .popular-items h2 {
+        font-size: 24px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    footer {
+        text-align: center;
+    }
+
+    .footer-content {
+        flex-direction: column;
+    }
+
+    .services-container,
+    .testimonial-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service, .testimonial {
+        min-width: 100%;
+    }
+}
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
 }
 
 @media screen and (max-width: 1200px) {
